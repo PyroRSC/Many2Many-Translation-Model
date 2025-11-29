@@ -3,3 +3,9 @@ models filter=lfs diff=lfs merge=lfs -text
 tokenizer filter=lfs diff=lfs merge=lfs -text
 vocabs filter=lfs diff=lfs merge=lfs -text
 dataset filter=lfs diff=lfs merge=lfs -text
+m2m100model.z02 filter=lfs diff=lfs merge=lfs -text
+m2m100model.z03 filter=lfs diff=lfs merge=lfs -text
+m2m100model.z04 filter=lfs diff=lfs merge=lfs -text
+m2m100model.z05 filter=lfs diff=lfs merge=lfs -text
+m2m100model.zip filter=lfs diff=lfs merge=lfs -text
+m2m100model.z01 filter=lfs diff=lfs merge=lfs -text
