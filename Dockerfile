@@ -2,9 +2,12 @@ FROM python:3.12-slim
 
 # Set working directory
 WORKDIR /workspace
-
+ARG CUDA_HOME=/usr/local/cuda
 # Install JupyterLab
 ENV JUPYTER_TOKEN=token
+ENV CUDA_HOME=${CUDA_HOME}
+ENV PATH=${CUDA_HOME}/bin:$PATH
+ENV LD_LIBRARY_PATH=${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
 # Expose port for JupyterLab
 EXPOSE 8888
 
@@ -14,8 +17,7 @@ RUN pip install ipywidgets ipykernel protobuf
 RUN pip install transformers huggingface_hub sentencepiece -U 
 RUN pip install numpy pandas peft bitsandbytes -U
 RUN pip install  evaluate torch torchvision sacrebleu -U 
-
-
+# RUN pip install flash-attn --no-build-isolation
 # Run JupyterLab
 CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
 
