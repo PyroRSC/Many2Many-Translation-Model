@@ -1,6 +1,14 @@
 ### Many2Many-Translation-Model Directory
 Authors: Renzo Chua, Malks David, Kenneth Go, Rinaldo Lee
 
+### Steps to Reproduce
+1. Obtain a huggingface API key from https://huggingface.co/ 
+2. Generate the parallel corpora from `parallel_corpora_gen.ipynb`
+3. Clean the datasets with `clean_dataset.ipynb`
+4. Run the `tokenizer.ipynb` 
+5. Fine tune the model with `fine-tuning.ipynb`
+6. Evaluate with `evaluation.ipynb`
+
 ---
 
 tokenizer.ipynb
