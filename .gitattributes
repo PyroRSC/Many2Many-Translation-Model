@@ -39,3 +39,7 @@ dataset/tl-sbl-corpora.csv filter=lfs diff=lfs merge=lfs -text
 dataset/bicol-to-ivatan-corpora.csv filter=lfs diff=lfs merge=lfs -text
 dataset/tagalog-to-english-corpora.csv filter=lfs diff=lfs merge=lfs -text
 dataset/tl-pam-corpora.csv filter=lfs diff=lfs merge=lfs -text
+models/extended_lang_m2m100_1.2B_tl-ceb filter=lfs diff=lfs merge=lfs -text
+models/extended_lang_m2m100_1.2B_tl-ilg filter=lfs diff=lfs merge=lfs -text
+m2m100-tl-ilg-model.zip filter=lfs diff=lfs merge=lfs -text
+m2m100-tl-ceb-model.zip filter=lfs diff=lfs merge=lfs -text
